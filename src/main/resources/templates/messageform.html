@@ -13,6 +13,29 @@
     <title>Title</title>
 
     <style>
+        body {
+            background: url("https://images.unsplash.com/photo-1478293888741-aee4356f71c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1401&q=80") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .spacer {
+            width: auto;
+            height: 307px;
+            background-color: transparent;
+        }
+        .contain {
+            background-color: #ce5a31;
+            border-radius: 550px;
+            /*border: 200px;*/
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-left: 325px;
+            margin-right: 325px;
+        }
+
         .center {
             margin: auto;
             width: 50%;
@@ -33,7 +56,8 @@
 
 <body>
 <div class="container">
-    <div class="jumbotron">
+    <div class="spacer"></div>
+    <div class="contain">
         <div th:replace="base :: header"></div>
         <br />
         <div class="center">
